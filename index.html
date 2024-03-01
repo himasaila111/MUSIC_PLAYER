@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6108430d91.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="music-player">
+        <div class="navBar">
+            <div>
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        
+        <img src="images/nerekshana.png" alt="logo" class="logo">
+        <h1>Aakasam Enatidho</h1>
+        <p>S.P.BalaSubramanyam & S.Janaki</p>
+
+        <audio class="audio">
+            <source src="images/AakasamMp3.Co.mp3" type="audio/mpeg">
+        </audio>
+
+            <input type="range" value="0" class="range">
+
+
+        <div class="controls">
+            <div>
+                <i class="fa-solid fa-caret-left"></i>
+            </div>
+            <div class="control-icon" onclick="controlSong()">
+                <i class="fa-solid fa-play" id="control-icon"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
